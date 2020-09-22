@@ -1,0 +1,12 @@
+<div>
+  <h5>other blogs</h5>
+  <ul>
+    <li *ngFor="let blog of (blogs$ | async)"><a [routerLink]="blog.route">{{blog.title}}</a></li>
+  </ul>
+</div>
+<hr>
+
+<!-- This is where Scully will inject the static HTML -->
+<scully-content></scully-content>
+<hr>
+<h4>End of content</h4>
